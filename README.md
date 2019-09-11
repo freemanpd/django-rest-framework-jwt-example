@@ -1,5 +1,5 @@
 # django-rest-framework-example
-An example ["Django Rest Framework"](https://www.django-rest-framework.org/) application.
+An example ["Django REST Framework"](https://www.django-rest-framework.org/) application.
 
 ## Screenshots
 
