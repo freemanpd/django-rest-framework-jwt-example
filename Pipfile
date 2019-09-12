@@ -9,6 +9,8 @@ verify_ssl = true
 djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
+install = "*"
+djangorestframework-simplejwt = "*"
 
 [requires]
 python_version = "3.6"

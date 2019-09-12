@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+class Movies(models.Model):
+    name = models.CharField(max_length=100, on_delete=models.CASCADE)
+    realeased = models.IntegerField()
+    runtime = models.IntegerField()
+    genre = models.CharField(max_length=100)
+    rated = models.CharField(max_length=10)
+    plot = models.CharField(max_length=1000)
