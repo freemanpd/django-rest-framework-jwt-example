@@ -1,5 +1,5 @@
 # django-rest-framework-example
-An example ["Django REST Framework"](https://www.django-rest-framework.org/) application.
+An example ["Django REST Framework"](https://www.django-rest-framework.org/) JSON Web Token ["(JWT)"](https://en.wikipedia.org/wiki/JSON_Web_Token) application.
 
 ## Screenshots
 
