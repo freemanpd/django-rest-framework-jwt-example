@@ -44,3 +44,4 @@ Once the server is running, visit http://127.0.0.1:8000 in your web browser. Now
 * Properly installing Python - https://docs.python-guide.org/starting/installation/
 * Installing pipenv - https://docs.python-guide.org/dev/virtualenvs/#installing-pipenv
 * Django REST Framework - https://www.django-rest-framework.org
+* Django REST Framework Simple JWT - https://github.com/davesque/django-rest-framework-simplejwt
