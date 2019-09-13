@@ -1,7 +1,7 @@
 from django.db import models
 
 class Movies(models.Model):
-    name = models.CharField(max_length=100, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
     realeased = models.IntegerField()
     runtime = models.IntegerField()
     genre = models.CharField(max_length=100)

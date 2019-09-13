@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from api import apiView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(''), include('movies.urls')
-    path('api/v1/', apiView),
+    path('', include('api.urls')),
 ]
