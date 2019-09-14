@@ -3,6 +3,8 @@ An example ["Django REST Framework"](https://www.django-rest-framework.org/) JSO
 
 ## Screenshots
 
+![health_check](https://github.com/freemanpd/django-rest-framework-jwt-example/blob/master/docs/health_check.png)
+
 ## Requirements
 1. Python 3.4+
 1. Pipenv 
@@ -36,7 +38,7 @@ Once the server is running, visit http://127.0.0.1:8000 in your web browser. Now
 ![Django admin login](https://github.com/freemanpd/django-helloworld/blob/master/docs/django-admin-login.png)
 
 ## API endpoints
-* ```api/v1```
+* ```api/v1/```
 * ```api/token/```
 * ```api/token/refresh/```
 * ```health_check/```
