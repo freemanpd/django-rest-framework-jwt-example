@@ -36,7 +36,10 @@ Once the server is running, visit http://127.0.0.1:8000 in your web browser. Now
 ![Django admin login](https://github.com/freemanpd/django-helloworld/blob/master/docs/django-admin-login.png)
 
 ## API endpoints
-
+* ```api/v1```
+* ```api/token/```
+* ```api/token/refresh/```
+* ```health_check/```
 
 ## API examples
 
