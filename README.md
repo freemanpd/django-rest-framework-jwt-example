@@ -1,5 +1,5 @@
 # django-rest-framework-example
-An example ["Django REST Framework"](https://www.django-rest-framework.org/) JSON Web Token ["(JWT)"](https://en.wikipedia.org/wiki/JSON_Web_Token) application.
+An example ["Django REST framework"](https://www.django-rest-framework.org/) JSON Web Token ["(JWT)"](https://en.wikipedia.org/wiki/JSON_Web_Token) application.
 
 ## Screenshots
 
@@ -20,7 +20,7 @@ pipenv install
 ```
 3. Run database migrations
 ```
-python3 manage.py migrate
+python manage.py migrate
 ```
 4. Create admin user
 ```
@@ -37,13 +37,30 @@ Once the server is running, visit http://127.0.0.1:8000 in your web browser. Now
 
 ![Django admin login](https://github.com/freemanpd/django-helloworld/blob/master/docs/django-admin-login.png)
 
-## API endpoints
+## Endpoints
 * ```api/v1/```
 * ```api/token/```
 * ```api/token/refresh/```
 * ```health_check/```
 
-## API examples
+## API/endpoint examples
+
+### Obtain token
+```curl   -X POST   -H "Content-Type: application/json" -d '{"username": "admin", "password": "password123"}'   http://localhost:8000/api/token/
+
+....{"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYwMDEwMjU4NywianRpIjoiMjE3NmE1MTNhMTIyNDM5MmEwMTk0NDlhY2ZjNzg0NGIiLCJ1c2VyX2lkIjoxfQ.RjXDUt90_W7t6N-h4P333clLbQ5oDLHSS3suQ56w1_Q","access":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAwMTAyNTg3LCJqdGkiOiI4ZmY0YjVkMTNmMTY0MDk4YjVmMGE2MmUwMTRhMGUwZSIsInVzZXJfaWQiOjF9.pOof6NyWHSfFVcJrJhpQMlAEzFKpyR9aTj-og_OpVaE"}
+```
+
+### Create content
+curl -XPOST http://localhost:8000/api/v1/movies/ -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAwMTAzMjI2LCJqdGkiOiIzZTJiMWNmMzI1YTc0YjNhOTA2OGEwYWI0Y2IxNWJkMCIsInVzZXJfaWQiOjF9.BPjzsKgIWrgRn-qwjqCklKQ52KEJOnVjPNULE58MbkM" -d '{"title": "The Avengers", "year": "2012", "runtime": "143", "genre": "Action, Adventure, Sci-Fi", "rated": "PG-13","plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity."}' 
+
+### Retrieve content
+```
+curl -XGET http://localhost:8000/api/v1/movies/ -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAwMTAzMjI2LCJqdGkiOiIzZTJiMWNmMzI1YTc0YjNhOTA2OGEwYWI0Y2IxNWJkMCIsInVzZXJfaWQiOjF9.BPjzsKgIWrgRn-qwjqCklKQ52KEJOnVjPNULE58MbkM" 
+```
+
+### Check appliction health
+```curl -XGET http://localhost:8000/health_check/?format=json````
 
 ## Resources
 * Properly installing Python - https://docs.python-guide.org/starting/installation/
