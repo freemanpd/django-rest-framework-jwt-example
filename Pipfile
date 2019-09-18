@@ -12,6 +12,7 @@ markdown = "*"
 django-filter = "*"
 djangorestframework-simplejwt = "*"
 django-health-check = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7.4"
