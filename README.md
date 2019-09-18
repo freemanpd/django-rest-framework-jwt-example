@@ -50,7 +50,7 @@ Once the server is running, visit http://127.0.0.1:8000 in your web browser. Now
 ### Obtain token
 ```
 curl -XPOST http://localhost:8000/api/token/  -H "Content-Type: application/json" -d '{"username": "admin", "password": "password123"}' 
-\
+
 ...
 {"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYwMDEwMjU4NywianRpIjoiMjE3NmE1MTNhMTIyNDM5MmEwMTk0NDlhY2ZjNzg0NGIiLCJ1c2VyX2lkIjoxfQ.RjXDUt90_W7t6N-h4P333clLbQ5oDLHSS3suQ56w1_Q","access":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAwMTAyNTg3LCJqdGkiOiI4ZmY0YjVkMTNmMTY0MDk4YjVmMGE2MmUwMTRhMGUwZSIsInVzZXJfaWQiOjF9.pOof6NyWHSfFVcJrJhpQMlAEzFKpyR9aTj-og_OpVaE"}
 ```
