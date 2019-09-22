@@ -53,7 +53,7 @@ curl -XPOST http://localhost:8000/api/token/  -H "Content-Type: application/json
 
 ### Create content
 ```
-
+![rest](https://github.com/freemanpd/django-helloworld/blob/master/docs/rest.png)
 ```
 
 ### Retrieve content
