@@ -1,0 +1,9 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('django-rest-framework-jwt-example') }}{% endblock %}
+
+{% block branding %}
+<h1 id="django-rest-framework-jwt-example<"><a href="{% url 'admin:index' %}">django-rest-framework-jwt-example</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
