@@ -33,7 +33,7 @@ Once the server is running, visit http://127.0.0.1:8000 in your web browser. Now
 
 **Note:** access the Django admin interface here: http://127.0.0.1:8000/admin. Example:
 
-![Django admin login](https://github.com/freemanpd/django-helloworld/blob/master/docs/django-admin-login.png)
+![Django admin login](https://github.com/freemanpd/django-rest-framework-jwt-example/blob/master/docs/django-admin-login.png)
 
 ## Endpoints
 * ```api/v1/```
@@ -52,9 +52,8 @@ curl -XPOST http://localhost:8000/api/token/  -H "Content-Type: application/json
 ```
 
 ### Create content
-```
-![rest](https://github.com/freemanpd/django-helloworld/blob/master/docs/rest.png)
-```
+
+![rest](https://github.com/freemanpd/django-rest-framework-jwt-example/blob/master/docs/rest.png)
 
 ### Retrieve content
 ```
