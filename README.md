@@ -40,7 +40,7 @@ Once the server is running, visit http://127.0.0.1:8000 in your web browser. Now
 * ```api/token/```
 * ```api/token/refresh/```
 * ```health_check/```
-
+![health_check](https://github.com/freemanpd/django-rest-framework-jwt-example/blob/master/docs/health_check.png)
 ## API/endpoint examples
 
 ### Obtain token
