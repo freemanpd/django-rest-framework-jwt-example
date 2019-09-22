@@ -14,5 +14,5 @@ djangorestframework-simplejwt = "*"
 django-health-check = "*"
 gunicorn = "*"
 
-[requires]
-python_version = "3.7.4"
+#[requires]
+#python_version = "3.7.4"
