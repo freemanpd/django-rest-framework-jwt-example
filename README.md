@@ -4,7 +4,7 @@ An example ["Django REST framework"](https://www.django-rest-framework.org/) JSO
 [![Build Status](https://travis-ci.com/freemanpd/django-rest-framework-jwt-example.svg?branch=master)](https://travis-ci.com/freemanpd/django-rest-framework-jwt-example)
 
 ## Requirements
-1. Python 3.4+
+1. Python 3.6+
 1. Pipenv 
 
 ## Installation
